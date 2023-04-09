@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.33423.256
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class_MWb", "Class_MWb\Class_MWb.vcxproj", "{F80DC0D4-FFE5-449A-8CEB-9D2B44525484}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01 Week", "01 Week\01 Week.vcxproj", "{F4B3814A-33E5-4F03-8A89-485666566706}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Week", "01 Week\01 Week.vcxproj", "{F4B3814A-33E5-4F03-8A89-485666566706}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1_3_Payroll", "1_3_Payroll\1_3_Payroll.vcxproj", "{F3888A52-40BE-4358-83B3-76430C95A255}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2_1_DataType", "2_1_DataType\2_1_DataType.vcxproj", "{F83D782F-EBDA-4496-86BE-E5EF2E287435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,22 @@ Global
 		{F4B3814A-33E5-4F03-8A89-485666566706}.Release|x64.Build.0 = Release|x64
 		{F4B3814A-33E5-4F03-8A89-485666566706}.Release|x86.ActiveCfg = Release|Win32
 		{F4B3814A-33E5-4F03-8A89-485666566706}.Release|x86.Build.0 = Release|Win32
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Debug|x64.ActiveCfg = Debug|x64
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Debug|x64.Build.0 = Debug|x64
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Debug|x86.ActiveCfg = Debug|Win32
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Debug|x86.Build.0 = Debug|Win32
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Release|x64.ActiveCfg = Release|x64
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Release|x64.Build.0 = Release|x64
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Release|x86.ActiveCfg = Release|Win32
+		{F3888A52-40BE-4358-83B3-76430C95A255}.Release|x86.Build.0 = Release|Win32
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Debug|x64.ActiveCfg = Debug|x64
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Debug|x64.Build.0 = Debug|x64
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Debug|x86.ActiveCfg = Debug|Win32
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Debug|x86.Build.0 = Debug|Win32
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Release|x64.ActiveCfg = Release|x64
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Release|x64.Build.0 = Release|x64
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Release|x86.ActiveCfg = Release|Win32
+		{F83D782F-EBDA-4496-86BE-E5EF2E287435}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
