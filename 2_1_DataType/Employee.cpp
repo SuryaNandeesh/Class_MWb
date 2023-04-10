@@ -1,39 +1,56 @@
 #include "Employee.h"
-#pragma once
 #include <iostream>
-using namespace std;
 
-int daysWorked;
-int dayNum;
-const float TAX = 0.01f;
-int totalHours = 0;
-float fGrossPay = 0; // Calc - total hours * wage
-float netPay = 0; // Calc - (Gross Pay - (Gross Pay * Tax))
-float fTax = 0; // (Gross Pay * Tax Rate)
-float fWage = 15.00f; // get pay her hour
+Employee::Employee() : fWage(15.00f), TAX(0.01f), totalHours(0), fGrossPay(0), fTax(0), netPay(0) {}
 
-Employee::Employee(){
-	//put constructor code here
+void Employee::Read() {
+    std::cout << "Enter First Name: ";
+    std::cin >> name;
+
+    std::cout << "Enter number of days worked: ";//ChatGPT helped
+    std::cin >> daysWorked;
+    hoursPerDay.resize(daysWorked);
+
+    for (int i = 0; i < daysWorked; i++) { //roomates helped with this one & chatgpt refined it
+        std::cout << "Enter Hours Worked for the day " << (i + 1) << ":";
+        std::cin >> hoursPerDay[i];
+        totalHours += hoursPerDay[i];
+        fGrossPay += (hoursPerDay[i] * fWage);
+        fTax += (hoursPerDay[i] * fWage * TAX);
+        netPay += (hoursPerDay[i] * fWage) - (hoursPerDay[i] * fWage * TAX);
+    }
 }
 
+void Employee::Write() {
+    std::cout << "First Name: " << name << "\nDays Worked: " << daysWorked << "\nHours Per Day:";
+    for (int i = 0; i < daysWorked; i++) {
+        std::cout << " " << hoursPerDay[i];
+    }
+    std::cout << "\nTotal Hours: " << totalHours << std::endl;
+}
+
+
+
+//old code before ChatGPT fixed it
+/*
 void Employee::Read(){
 	//Put read code here
 	cout << "Enter First Name: ";
 	cin >> name;
 
-	for (int i = 0; i < daysWorked; i++) {
-		cout << "Enter Hours Worked for the day " << dayNum << ":";
-		cin >> hoursPerDay[dayNum];
+	cout << "Enter number of days worked: ";
+	cin >> daysWorked;
+	hoursPerDay.resize(daysWorked);
 
-		fGrossPay = ((hoursPerDay[dayNum]) * fWage);
-		netPay = (fGrossPay - (fGrossPay * fTax));
-		fTax = (fGrossPay * TAX);
-	}	
-}
 
-void Employee::Write(){
-	//put write code here
-	std::cout << "First Name: " << name << "\n Age: " << age <<
-		"\n Days Worked: " << daysWorked << "\n Hours Per Day: "
-		<< hoursPerDay << "\n Total Hours: " << totalHours << endl;
+	for (int i = 0; i < daysWorked; i++) { //Proofcoded by ChatGPT
+		cout << "Enter Hours Worked for the day " << (i + 1) << ":";
+		cin >> hoursPerDay[i];
+		dayNum++;
+		totalHours += hoursPerDay[i];
+		fGrossPay += (hoursPerDay[i] * fWage);
+		fTax += (hoursPerDay[i] * fWage * TAX);
+		netPay += (hoursPerDay[i] * fWage) - (hoursPerDay[i] * fWage * TAX);
+	}
 }
+*/
